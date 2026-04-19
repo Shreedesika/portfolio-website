@@ -1,98 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <style>
-        body {
-            font-family: Arial;
-            margin: 0;
-            background: #f4f4f4;
-        }
-        header {
-            background: #222;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background: #444;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 10px;
-            text-decoration: none;
-        }
-        section {
-            padding: 40px;
-            margin: 20px;
-            background: white;
-            border-radius: 10px;
-        }
-        h2 {
-            color: #333;
-        }
-        .project {
-            margin-bottom: 20px;
-        }
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: #222;
-            color: white;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: rgba(0,0,0,0.5);
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero p {
+    color: #cbd5f5;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    border-bottom: 2px solid #38bdf8;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* Cards */
+.card {
+    background: #1e293b;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* Skills */
+.skills span {
+    display: inline-block;
+    background: #38bdf8;
+    color: black;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+}
+</style>
+
 </head>
+
 <body>
 
-<header>
-    <h1>Your Name</h1>
-    <p>AI & Machine Learning Developer</p>
-</header>
-
+<!-- Navbar -->
 <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
+    <h3>Your Name</h3>
+    <div>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
 </nav>
 
+<!-- Hero -->
+<div class="hero">
+    <h1>AI & Machine Learning Developer</h1>
+    <p>Building intelligent systems using data and deep learning</p>
+</div>
+
+<!-- About -->
 <section id="about">
     <h2>About Me</h2>
-    <p>I am a passionate AI and Machine Learning student working on real-world projects like disease prediction and oil spill detection.</p>
+    <p>
+        I am an aspiring Artificial Intelligence and Machine Learning developer focused on solving real-world problems using data-driven approaches. My work includes healthcare and environmental applications such as disease prediction and oil spill detection.
+    </p>
 </section>
 
+<!-- Projects -->
 <section id="projects">
     <h2>Projects</h2>
 
-    <div class="project">
+    <div class="card">
         <h3>Infectious Disease Prediction</h3>
-        <p>Predicts disease outbreaks using environmental data like temperature, humidity, and NDVI.</p>
+        <p>
+            Developed a machine learning model to predict disease outbreaks using environmental data like temperature, humidity, rainfall, and NDVI.
+        </p>
     </div>
 
-    <div class="project">
-        <h3>Oil Spill Detection</h3>
-        <p>Uses YOLOv11 to detect oil spills from satellite images.</p>
+    <div class="card">
+        <h3>Student Result Management System</h3>
+        <p>
+Developed a web-based Student Result Management System to efficiently manage and store student academic records. The system allows administrators to add, update, and retrieve student details and exam results in a structured format.
+
+It improves accuracy, reduces manual effort, and provides quick access to student performance data through a simple and user-friendly interface.
+</p>
+           
     </div>
 
 </section>
 
+<!-- Skills -->
 <section id="skills">
     <h2>Skills</h2>
-    <p>Python, Machine Learning, Deep Learning, OpenCV, TensorFlow</p>
+
+    <div class="skills">
+        <span>Python</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        
+    </div>
+
 </section>
 
+<!-- Contact -->
 <section id="contact">
     <h2>Contact</h2>
     <p>Email: yourmail@gmail.com</p>
     <p>LinkedIn: your link</p>
+    <p>GitHub: your link</p>
 </section>
 
+<!-- Footer -->
 <footer>
-    <p>© 2026 Your Name</p>
+    <p>© 2026 Your Name | AI Portfolio</p>
 </footer>
 
 </body>
